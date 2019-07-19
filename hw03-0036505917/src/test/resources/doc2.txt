@@ -1,0 +1,16 @@
+Tekst kal ana 
+{$FOR i 2 10 -5$}
+	\{$=i$}
+{$END$}jos teksta
+{$FOR tmp "-1 \"oct\" " 5$}
+	tekst
+	{$=p$}
+	{$FOR i_276pr j2sd k_pds$}
+		sks7
+		{$FOR p " \\ \n \t \" " 10.2$}
+		zadnji for
+		{$END$}
+	{$END$}
+kol
+{$END$}
+kraj

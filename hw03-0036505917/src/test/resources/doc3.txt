@@ -1,0 +1,15 @@
+start of text
+{$FOR i 2 10 "lex\" tex2\" "$}
+	some more text \{$END$} almost done
+	\\there is no meaning
+	{$FOR n_p2 2 10 5$} in th {$=i$} s text \{$= \\$}
+	
+	building up a tree {$For var 3 
+	
+	8$} {=$no tag here$} {$END$}{$END$}
+	
+	{$= @sin_p23@monitor_this "\" sp82	" $}
+	
+	{$END$}
+	
+end of text.
