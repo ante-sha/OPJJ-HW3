@@ -1,0 +1,54 @@
+span {
+	display: inline-block;
+	padding: 10 10;
+}
+
+.error {
+	color: red;
+}
+
+.comment {
+	border-style: double;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+p {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.inf {
+	float: right;
+	margin: 0 10;
+}
+
+#title {
+	display: inline-block;
+}
+
+.header {
+	display: inline-block;
+	float: right;
+	margin: 5 5;
+	padding:10 10;
+}
+
+a {
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 10;
+	margin: 5 5;
+}
+
+a:hover {
+	color: white;
+	background: grey;
+}
+
+li {
+	margin: 15;
+}
