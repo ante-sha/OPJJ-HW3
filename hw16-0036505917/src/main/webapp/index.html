@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Galerija </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript"><!--
+		searchForTags();
+		
+		function previewImage(name) {
+			$("#preview").html("<img id='fullImg' src='image/" + name + "' width=1000 height=700>");
+			$("button").css("background-color","#dde2d7");
+			$("button").css("color", "black");
+			$.ajax({
+				url: "rest/imageInfo/image/" + name,
+				dataType: "json",
+				success: function(data) {
+					var desc = "Opis slike: " + data.desc;
+					var tags = data.tags;
+					
+					var tagsHtml = "";
+					for(var i = 0; i< tags.length; i++){
+						$("#tag_" + tags[i]).css("background-color", "grey");
+						$("#tag_" + tags[i]).css("color", "white");
+					}
+					
+					$("#desc").html(desc);
+					$("#imgTags").html(tagsHtml);
+				}
+			});
+		}
+		
+		function requestForThumbs(tag) {
+			$("#preview").html("");
+			$("#imgTags").html("");
+			$("#desc").html("");
+			$("button").css("background-color","#dde2d7");
+			$("button").css("color", "black");
+			$.ajax({
+				url: "rest/imageInfo/" + tag,
+				data: {},
+				dataType: "json",
+				success: function(data) {
+					var names = data["imageNames"];
+					var html = "";
+					if(names.length == 0) {
+						html = "Nijedna slika nije odabrana za zadani tag";
+					} else {
+						for(var i = 0; i < names.length; i++){
+							html += 
+							"<span class='thumbs'>" +
+								"<a onclick='javascript:previewImage(\"" + names[i] + "\");'>" +
+									"<img class='thumb' src='thumbs/" + names[i] + "' width=150 height=150>" +
+								"</a>" +
+							"</span>"
+						}
+					}
+					$("#thumbnails").html(html);
+				}
+			});
+			
+		}
+		
+		function searchForTags() {
+			$.ajax({
+				url: "rest/imageInfo",
+				data: {
+					dummy: Math.random()
+				},
+				dataType: "json",
+				success: function(data) {
+					var tags = data["tags"];
+					var html = "";
+					if(tags.length==0) {
+						html = "Nema tagova..."
+					} else {
+						for(var i=0; i<tags.length; i++) {
+							html += "<button class='tag' id='tag_" + tags[i] + "' onclick='requestForThumbs(this.value);' value='" + tags[i] + "'>" + tags[i] + "</button>";
+						}
+					}
+					$("#tags").html(html);
+				 }
+			});
+		}
+		  
+		//--></script>
+		
+	</head>
+	<body>
+		<div><h1 id="title">Galerija slika prirode</h1></div>
+		
+		<div id="tags"></div>
+		<div id="thumbnails"></div>
+		<hr>
+		
+		<div id="selected">
+			<div id="desc"></div>
+			<div id="preview"></div>
+		</div>
+	</body>
+</html>

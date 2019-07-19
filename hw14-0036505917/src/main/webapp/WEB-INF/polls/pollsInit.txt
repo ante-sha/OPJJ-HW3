@@ -1,0 +1,2 @@
+Glasanje za omiljeni bend:	Od sljedećih bendova, koji Vam je bend najdraži? Kliknite na link kako biste glasali!	/WEB-INF/polls/bendovi.txt
+Glasanje za omiljenu seriju:	Od sljedećih serija klikom na link glasajte za vašu omiljenu!	/WEB-INF/polls/serije.txt

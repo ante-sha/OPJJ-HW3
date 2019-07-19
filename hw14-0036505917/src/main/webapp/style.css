@@ -1,0 +1,18 @@
+body {
+	font-size: 22;
+	font-style: bold;
+}
+
+a {
+	border-style: solid;
+	margin: 20;
+	padding: 5 5;
+}
+
+li{
+	margin: 20;
+}
+
+textarea{
+	margin: 20 20;
+}
