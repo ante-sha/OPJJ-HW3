@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body {
+ background-color: #{$= "background" "000000" @tparamGet$};
+ text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Links</h2>
+<a href="/scripts/osnovni.smscr">Osnovna</a>
+<a href="/scripts/brojPoziva.smscr">Broj poziva</a>
+<a href="/scripts/fibonaccih.smscr">Fibonacci</a>
+<br>
+<a href="/ext/HelloWorker">HelloWorker</a>
+<a href="/ext/CircleWorker">CircleWorker</a>
+<hr>
+<h2>Form for SumWorker</h2>
+<form action="/ext/SumWorker" method="GET">
+  First operand "a":<br>
+  <input type="text" name="a" value="1"><br>
+  Second operand "b":<br>
+  <input type="text" name="b" value="2"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h2>Change color select</h2>
+<form action="/ext/BgColorWorker" method="GET" id="bgcolor">
+<select name="bgcolor" form="bgcolor">
+  <option selected value="FF0000">Red</option>
+  <option value="00FFE6">Cyan</option>
+  <option value="00FF1A">Green</option>
+  <option value="FFEF00">Yellow</option>
+  <option value="FF9A00">Orange</option>
+  <option value="7F7F7F">Gray</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

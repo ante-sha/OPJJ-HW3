@@ -1,0 +1,68 @@
+Marko Mišković 0036502551
+
+Pozdrav :) !
+
+Dajem konačnu ocjenu 1 jer ne zadovljava minimalni uvjet da se ne smije otvarati isti dokument.
+
+Ocjenjivao sam i recenzirao tako što sam išao po uputi prvo probati minimalne uvjete i slučajeve
+koje je zadao prof, pa usput komentirao ako sam što primjetio.
+
+Krenimo redom,
+1. zadatak
+- predivno, prelijepo bez teksta dakle stvarno na jednoj profesionalnoj razini odrađeno i 
+zato mi je žao što je ovo ipak 1 jer naime ne zadovoljava minimalni uvjet : 
+pokušaj otvaranja File->Open dokumenta koji je već otvoren NE smije dodati novi tab
+
+- cut, copy i paste akcije postoje defaultne ugrađene u swing (imaš ovo na prezentacijama) tako
+ da si magao, možda bih rekao čak i trebao njih korisiti
+
+- predivno :)
+
+2. zadatak:
+- sve radi kako treba
+
+- pošto je LocalizableAction abstraktan razred nisi morao imati praznu implementaciju metode performAction()
+
+-
+
+Sretno u nastavku vještine! :)
+
+--------------------------------------
+
+Navratil, Ivan (0036510118)
+
+Ocjena 1 jer se može otvoriti dokument koji je već otvoren u nekom drugom prozoru
+
+Z1
+minimalni uvjeti:ne
+- ovakvo otvaranje notepada je dosta iritantno jer se ne maximizira nego se samo otvori preko cijelog ekrana, ali tako da je donja traka odsječena, a ni ovo pozicioniranje izbornika na desnoj strani nije baš najsretnije
+-file->open document dodaje već otvoreni dokument => *ocjena 1*
+- modifikacija modified ti se radi i ako korisnik kaže da želi spremiti pa odustane
+- između puta i Notepada bi trebao biti minus (nije bitno but still)
+- ne mislim da eksplicitno piše u uputi, ali smo na satu radili da su neke naredbe dostupne samo ako ima smisla, npr. kod tebe se može radili copy ili cut i ako ništa nije označeno
+-inače kod izgleda dobro napisan i opširno dokumentiran
+
+
+
+Z2
+minimalni uvjeti:da
+- postoji neki problem s kodiranjem datoteke(?), npr. ako prebaciš na njemački, kod "Zamijena slova" na njemačkom je prvo slovo druge riječi neprepoznato
+
+___
+inače, vidi se da si se potrudio i stavio neke extra stvari, ali eto ruši te minimalni uvjet
+
+-----------------------------------------
+
+Neduhal, Valentino (0119024290)
+
+Nabrojati ću samo minimalne uvjete koji nisu ispunjeni:
+
+"Pokušaj otvaranja File->Open dokumenta koji je već otvoren NE smije dodati novi tab; ili treba korisniku reći da ne može, ili treba samo u prvi plan "aktivirati" tab u kojem je taj dokument već otvoren."
+U tvom programu ovim postupkom se otvara više inačica istog dokumenta a ne samo jedan na kojeg se kasnije prebacuje pogled.
+
+Svi ostali minimalni uvjeti su ispunjeni. Sve je lokalizirano ispravno. I pohvale na dizajnu, sve izgleda vrlo lijepo. Javadoc je uredan kao i kod općenito. No na žalost zbog neispunjavanja prvog uvjeta primoran sam dati 1.
+
+-----------------------------
+Provjerom da li je jedna od staza otvorenih dokumenata jednaka onoj koja se otvara provjerio sam da li je dokument već otvoren i ako je postavio sam ga za trenutno odabranog.
+
+_____________________________

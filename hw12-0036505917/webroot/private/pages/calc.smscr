@@ -1,0 +1,29 @@
+{$= "text/html" @setMimeType $}
+<html>
+ <head>
+  <title>SumWorker</title>
+  <style>
+   table, th, td {
+    border: 2px solid black;
+    text-align: center;
+   }
+   body {
+    text-align: center;
+   }
+  </style>
+ </head>
+ <body>
+ <h1>Zbrajanje</h1>
+ <div align=center>
+ <table>
+ <tbody>
+ <tr><td>a</td><td>{$= "varA" "1" @tparamGet$}</td></tr>
+ <tr><td>b</td><td>{$= "varB" "2" @tparamGet$}</td></tr>
+ <tr><td>a + b</td><td>{$= "zbroj" "0" @tparamGet$}</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <hr>
+ <img src="http://www.localhost.com:5721/images/{$= "imgName" "error" @tparamGet$}">
+ </body>
+</html>

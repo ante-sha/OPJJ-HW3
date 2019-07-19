@@ -1,0 +1,4 @@
+this is a sample text
+in
+4
+lines	with	tabs

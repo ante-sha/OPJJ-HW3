@@ -1,0 +1,18 @@
+body {
+	font-size: 22;
+	font-style: bold;
+}
+
+a {
+	border-style: solid;
+	margin: auto;
+	padding: 5 5;
+}
+
+div {
+	margin: 15 auto;
+}
+
+li {
+	margin: 15 auto;
+}
